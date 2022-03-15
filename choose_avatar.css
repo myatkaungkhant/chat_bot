@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+/* display_1 */
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.avatar_pics,
+.give_name {
+    width: 52vw;
+    height: 30vh;
+    border: 3px double yellow;
+    margin: 50px;
+    margin-left: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 20px yellow;
+}
+
+.robot_pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 6vw;
+    height: 12vh;
+    border-radius: 50%;
+    margin: 42px;
+    border: 3px solid red;
+    box-shadow: 1px 1px 15px red;
+    transition: all 150ms linear;
+}
+
+.robot_pic:hover {
+    transform: scale(2);
+}
+
+.one {
+    background-color: orange;
+}
+
+.two {
+    background-color: salmon;
+}
+
+.three {
+    background-color: aqua;
+}
+
+.four {
+    background-color: gold;
+}
+
+.check {
+    display: none;
+}
+
+.give_name {
+    text-align: center;
+    height: 10vh;
+    padding-top: 25px;
+    border-color: red;
+    box-shadow: 1px 1px 20px red;
+}
+
+.name_tit {
+    color: white;
+    border: 2px solid black;
+    height: 3vh;
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 10px;
+    border-top-left-radius: 12px;
+}
+
+.name_in {
+    width: 40vw;
+    height: 4vh;
+    font-size: 20px;
+    text-align: center;
+    padding: 4px;
+    border-bottom-right-radius: 12px;
+}
+
+.next {
+    margin-top: 0;
+
+    margin-left: 67%;
+}
+
+.btn_next {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px double green;
+    box-shadow: 1px 1px 20px green;
+    transition: all 150ms linear;
+}
+
+.btn_next:hover {
+    transform: translateX(50px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+/* display_2 */
+.choose_bot {
+    width: 20vw;
+    margin: 200px 0 0 250px;
+    transform: scaleX(-1);
+}
+
+.intro_p {
+    width: 50vw;
+    height: 10vh;
+    padding: 3vh;
+    border: 2px double blue;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    float: right;
+    margin: 150px 100px 0 0;
+    font-size: 20px;
+    color: white;
+    box-shadow: 1px 1px 15px blue;
+}
+
+.skip {
+    float: right;
+    margin-right: 200px;
+    color: white;
+}
