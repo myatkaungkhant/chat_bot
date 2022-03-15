@@ -7,39 +7,37 @@
     <title>Relax Bot</title>
     <link rel="stylesheet" href="choose_avatar.css">
     <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
-    <script src="avatar.js" defer></script>
+    <script src="choose_avatar.js" defer></script>
 </head>
 <body>
-    <div class="display_1">
+    <div class="display_1" id="display_1">
         <div class="title">
             <h2>Choose Avatar</h2>
         </div>
         <div class="avatar_pics">
-            <label for="robot_1"><img src="./image/robot_1.png" alt="" class="robot_pic one"></label>
-            <input type="radio" name="check" id="robot_1" class="check" checked>
-            <label for="robot_2"><img src="./image/robot_2.png" alt="" class="robot_pic two"></label>
-            <input type="radio" name="check" id="robot_2" class="check">
-            <label for="robot_3"><img src="./image/robot_3.png" alt="" class="robot_pic three"></label>
-            <input type="radio" name="check" id="robot_3" class="check">
-            <label for="robot_4"><img src="./image/robot_4.png" alt="" class="robot_pic four"></label>
-            <input type="radio" name="check" id="robot_4" class="check">
+            <img src="./image/robot_1.png" alt="" id="0" class="robot_pic one" onclick="check(this)">
+            <img src="./image/robot_2.png" alt="" id="1"  class="robot_pic two" onclick="check(this)">
+            <img src="./image/robot_3.png" alt="" id="2"  class="robot_pic three" onclick="check(this)">
+            <img src="./image/robot_4.png" alt="" id="3"  class="robot_pic four" onclick="check(this)">
         </div>
         <div class="give_name">
             <label for="name" class="name_tit">Avatar Name</label>
             <input type="text" class="name_in" id="name">
         </div>
         <div class="next">
-            <button class="btn_next"><a href="intro.html">Go<span>&#8594;</span></a></button>
+            <button class="btn_next" id="btn_next">Go<span>&#8594;</span></button>
         </div>
         <div class="footer">
             <p class="footer_p">Copyright&#169;relaxbot</p>
         </div>
     </div>
-    <div class="display_2">
+    <div class="display_2" id="display_2">
         <div class="bot_pic">
-            <img src="" alt="" class="choose_bot">
-            <div class="intro_p">Hello I am Kaki</div>
-            <button class="btn_next skip">Skip</button>
+            <img src="" alt="" class="choose_bot" id="choose_bot">
+            <div class="intro_p"><p id="intro"></p><button class="btn_next skip">Go</button></div>
+        </div>
+        <div class="footer">
+            <p class="footer_p">Copyright&#169;relaxbot</p>
         </div>
     </div>
 </body>

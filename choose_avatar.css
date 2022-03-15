@@ -5,14 +5,46 @@
 }
 
 body {
-    background-color: black;
+    background-image: url("./image/wallpaper.webp");
 }
 /* display_1 */
+.display_1{
+    display: block;
+}
 .title {
     text-align: center;
     margin-top: 20px;
     font-size: 30px;
     color: white;
+    text-shadow: 1px 1px 5px red;
+    animation: change_color 5s linear infinite;
+}
+
+@keyframes change_color{
+    0%{
+        color:yellow;
+        text-shadow: 1px 1px 5px yellow;
+    }
+    20% {
+        color: green;
+        text-shadow: 1px 1px 5px green;
+    }
+    40% {
+        color: blue;
+        text-shadow: 1px 1px 5px blue;
+    }
+    60% {
+        color: cyan;
+        text-shadow: 1px 1px 5px cyan;
+    }
+    80% {
+        color: tomato;
+        text-shadow: 1px 1px 5px tomato;
+    }
+    100% {
+        color: orange;
+        text-shadow: 1px 1px 5px orangered;
+    }
 }
 
 .avatar_pics,
@@ -60,10 +92,6 @@ body {
     background-color: gold;
 }
 
-.check {
-    display: none;
-}
-
 .give_name {
     text-align: center;
     height: 10vh;
@@ -74,12 +102,9 @@ body {
 
 .name_tit {
     color: white;
-    border: 2px solid black;
-    height: 3vh;
     font-size: 20px;
     padding: 7px;
     margin-left: 10px;
-    border-top-left-radius: 12px;
 }
 
 .name_in {
@@ -93,11 +118,11 @@ body {
 
 .next {
     margin-top: 0;
-
     margin-left: 67%;
 }
 
 .btn_next {
+    color: white;
     width: 10vw;
     height: 5vh;
     border-radius: 12px;
@@ -113,21 +138,18 @@ body {
     transform: translateX(50px);
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .footer {
     text-align: center;
     margin-top: 40px;
     color: white;
 }
 /* display_2 */
+.display_2{
+    display: none;
+}
 .choose_bot {
     width: 20vw;
     margin: 200px 0 0 250px;
-    transform: scaleX(-1);
 }
 
 .intro_p {
@@ -146,6 +168,7 @@ a {
 
 .skip {
     float: right;
-    margin-right: 200px;
+    margin-top: 50vh;
+    margin-left: 10vw;
     color: white;
 }
