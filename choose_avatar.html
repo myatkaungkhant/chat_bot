@@ -7,9 +7,12 @@
     <title>Relax Bot</title>
     <link rel="stylesheet" href="choose_avatar.css">
     <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="choose_avatar.js" defer></script>
 </head>
 <body>
+    <!-- display_1 -->
     <div class="display_1" id="display_1">
         <div class="title">
             <h2>Choose Avatar</h2>
@@ -31,17 +34,38 @@
             <p class="footer_p">Copyright&#169;relaxbot</p>
         </div>
     </div>
+    <!-- display_2 -->
     <div class="display_2" id="display_2">
         <div class="bot_pic">
             <img src="" alt="" class="choose_bot" id="choose_bot">
-            <div class="intro_p"><p id="intro"></p><button class="btn_next skip">Go</button></div>
+            <div class="intro_p"><p id="intro"></p><button class="btn_next skip" id="btn_skip">Go</button></div>
         </div>
         <div class="footer">
             <p class="footer_p">Copyright&#169;relaxbot</p>
         </div>
     </div>
-    <div class="display_3">
-        
+    <!-- display_3 -->
+    <div class="display_3" id="display_3">
+        <div class="chatbox">
+            <div>
+                <ul class="bot_chating" id="bot">
+                    <li class="bot">Hello</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="user_chating" id="user">
+                    <li class="user">Hello</li>
+                </ul>
+            </div>
+        </div>
+        <div class="message_box">
+            <input type="text" class="message">
+            <ion-icon name="mic" class="icon"></ion-icon>
+            <ion-icon name="paper-plane" class="icon"></ion-icon>
+        </div>
+        <div class="footer">
+            <p class="footer_p">Copyright&#169;relaxbot</p>
+        </div>
     </div>
 </body>
 </html>

@@ -12,3 +12,9 @@ go_click.addEventListener("click",() => {
 function check(obj) {
     choice = obj.id;
 }
+
+var skip_click = document.getElementById("btn_skip");
+skip_click.addEventListener("click",() => {
+    document.getElementById("display_2").style.display = "none";
+    document.getElementById("display_3").style.display = "block";
+});

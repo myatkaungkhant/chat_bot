@@ -172,3 +172,72 @@ body {
     margin-left: 10vw;
     color: white;
 }
+/* display_3 */
+.display_3{
+    display: none;
+}
+.chatbox {
+    width: 50vw;
+    height: 70vh;
+    border: 2px solid yellow;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.chatbox,.message_box{
+    margin-left: 25vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bot,
+.user {
+    max-width: 20vw;
+    padding: 2vh;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.bot {
+    color: cyan;
+    margin-left: 10px;
+    border: 2px solid cyan;
+}
+
+.user {
+    color: red;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+
+.message_box {
+    width: 50vw;
+    height: 10vh;
+    border: 2px solid gray;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message {
+    width: 40vw;
+    height: 2vh;
+    padding: 2vh;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 1.5vh;
+    margin-left: 10px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: blue;
+}
