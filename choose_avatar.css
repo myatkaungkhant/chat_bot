@@ -9,7 +9,7 @@ body {
 }
 /* display_1 */
 .display_1{
-    display: block;
+    display: none;
 }
 .title {
     text-align: center;
@@ -174,12 +174,15 @@ body {
 }
 /* display_3 */
 .display_3{
-    display: none;
+    display: block;
 }
 .chatbox {
     width: 50vw;
     height: 70vh;
     border: 2px solid yellow;
+    box-shadow: 1px 1px 25px red;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     margin-top: 30px;
     overflow: auto;
 }
@@ -188,17 +191,14 @@ body {
     margin-left: 25vw;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .bot,
 .user {
-    max-width: 20vw;
+    max-width: 15vw;
     padding: 2vh;
     border-radius: 12px;
     font-size: 20px;
     margin-top: 20px;
+    display: none;
 }
 
 .bot {
@@ -218,7 +218,8 @@ ul {
 .message_box {
     width: 50vw;
     height: 10vh;
-    border: 2px solid gray;
+    border: 2px solid yellow;
+    box-shadow: 1px 1px 25px orangered;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
