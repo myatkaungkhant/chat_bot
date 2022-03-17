@@ -21,6 +21,5 @@ skip_click.addEventListener("click",() => {
 // sent message
 var sent_click = document.getElementById("sent_icon");
 sent_click.addEventListener("click",() => {
-    document.getElementById("user").style.display = "flex";
-    document.getElementById("user").innerHTML += document.getElementById("message").value;
+    
 });
