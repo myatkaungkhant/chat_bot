@@ -1,5 +1,6 @@
 let pics = ["robot_1.png", "robot_2.png", "robot_3.png", "robot_4.png"];
 let choice;
+let bot_message = [];
 // from first to second 
 var go_click = document.getElementById("btn_next");
 go_click.addEventListener("click",() => {
@@ -21,5 +22,7 @@ skip_click.addEventListener("click",() => {
 // sent message
 var sent_click = document.getElementById("sent_icon");
 sent_click.addEventListener("click",() => {
-    
+    document.getElementById("user").style.display += "flex";
+    document.getElementById("user").innerHTML = document.getElementById("message").value;
+    document.getElementById("message").value = "";
 });
