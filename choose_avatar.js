@@ -1,9 +1,8 @@
 let pics = ["robot_1.png", "robot_2.png", "robot_3.png", "robot_4.png"];
 let choice;
-let bot_message = [];
 // from first to second 
 var go_click = document.getElementById("btn_next");
-go_click.addEventListener("click",() => {
+go_click.addEventListener("click", () => {
     document.getElementById("display_1").style.display = "none";
     document.getElementById("display_2").style.display = "block";
     document.getElementById("choose_bot").src = "./image/" + pics[choice];
@@ -15,14 +14,27 @@ function check(obj) {
 }
 // from second to third 
 var skip_click = document.getElementById("btn_skip");
-skip_click.addEventListener("click",() => {
+skip_click.addEventListener("click", () => {
     document.getElementById("display_2").style.display = "none";
     document.getElementById("display_3").style.display = "block";
 });
 // sent message
+let bot_message = ["Hello!", "I'm fine... How about you", "Exciting things!", "Glad to hear it", "I don't understand"];
 var sent_click = document.getElementById("sent_icon");
-sent_click.addEventListener("click",() => {
-    document.getElementById("user").style.display += "flex";
-    document.getElementById("user").innerHTML = document.getElementById("message").value;
+sent_click.addEventListener("click", () => {
+    document.getElementById("chatbox").innerHTML += "<div class='user' style='display:flex;'>" + document.getElementById("message").value + "</div>";
+    var user_message = document.getElementById("message").value;
     document.getElementById("message").value = "";
+    if (user_message.includes("Hello")) {
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[0] + "</div>";
+    } else if (user_message.includes("How")) {
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[1] + "</div>";
+    } else if (user_message.includes("What")) {
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[2] + "</div>";
+    } else if (user_message.includes("happy")) {
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[3] + "</div>";
+    } else {
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[4] + "</div>";
+    }
 });
+
