@@ -12,7 +12,7 @@ body {
 }
 /* display_1 */
 .display_1{
-    display: none;
+    display: block;
 }
 .title {
     text-align: center;
@@ -212,7 +212,7 @@ body {
 }
 /* display_3 */
 .display_3{
-    display: block;
+    display: none;
 }
 .chatbox {
     width: 50vw;
