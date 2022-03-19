@@ -1,5 +1,6 @@
 let pics = ["robot_1.png", "robot_2.png", "robot_3.png", "robot_4.png"];
 let choice;
+var audio = document.getElementById("audio");
 // from first to second 
 var go_click = document.getElementById("btn_next");
 go_click.addEventListener("click", () => {
@@ -50,17 +51,77 @@ sent_click.addEventListener("click", () => {
         } else if (user_message.includes("tell")) {
             document.getElementById("chatbox").innerHTML +=
                 "<div class='bot' style='display:flex;'>" + bot_message[6] + "</div>";
-        } else if(user_message.includes("play")){
+        } else if (user_message.includes("play")) {
             play_music();
+        } else if (user_message.includes("stop")) {
+            stop_music();
         } else {
             document.getElementById("chatbox").innerHTML +=
-                "<div class='bot' style='display:flex;'>" + bot_message[7] + "</div>";
+            "<div class='bot' style='display:flex;'>" + bot_message[7] + "</div>";
         }
     }, 1500);
 });
 // play music
 function play_music(){
     document.getElementById("content").style.display = "block";
+    audio.src = "../music/01 Overture.flac";
+    audio.play();
+    var context = new AudioContext();
+    var src = context.createMediaElementSource(audio);
+    var analyser = context.createAnalyser();
+
+    var canvas = document.getElementById("canvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var ctx = canvas.getContext("2d");
+
+    src.connect(analyser);
+    analyser.connect(context.destination);
+
+    analyser.fftSize = 256;
+
+    var bufferLength = analyser.frequencyBinCount;
+    console.log(bufferLength);
+
+    var dataArray = new Uint8Array(bufferLength);
+
+    var WIDTH = canvas.width;
+    var HEIGHT = canvas.height;
+
+    var barWidth = (WIDTH / bufferLength) * 2.5;
+    var barHeight;
+    var x = 0;
+
+    function renderFrame() {
+      requestAnimationFrame(renderFrame);
+
+      x = 0;
+
+      analyser.getByteFrequencyData(dataArray);
+
+      ctx.fillStyle = "#000";
+      ctx.fillRect(0, 0, WIDTH, HEIGHT);
+
+      for (var i = 0; i < bufferLength; i++) {
+        barHeight = dataArray[i];
+
+        var r = barHeight + 25 * (i / bufferLength);
+        var g = 250 * (i / bufferLength);
+        var b = 50;
+
+        ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+        ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+
+        x += barWidth + 1;
+      }
+    }
+    renderFrame();
 }
+function stop_music(){
+    document.getElementById("content").style.display = "none";
+    audio.pause();
+    audio.currentTime=0;
+}
+
 
 

@@ -4,39 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>4 In A Row</title>
+    <title>Relax Bot</title>
     <link rel="stylesheet" href="4 In A Row(1).css">
-    
+    <link rel="shortcut icon" href="../image/logo.jpg" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <div id="turn">Player 1 Turn!</div>
-    <div class="board">
-        <div class="row">
-            <div class="circle" id="1,1" onclick="flip(this)"></div>
-            <div class="circle" id="1,2" onclick="flip(this)"></div>
-            <div class="circle" id="1,3" onclick="flip(this)"></div>
-            <div class="circle" id="1,4" onclick="flip(this)"></div>
-        </div>
-        <div class="row">
-            <div class="circle" id="2,1" onclick="flip(this)"></div>
-            <div class="circle" id="2,2" onclick="flip(this)"></div>
-            <div class="circle" id="2,3" onclick="flip(this)"></div>
-            <div class="circle" id="2,4" onclick="flip(this)"></div>
-        </div>
-        <div class="row">
-            <div class="circle" id="3,1" onclick="flip(this)"></div>
-            <div class="circle" id="3,2" onclick="flip(this)"></div>
-            <div class="circle" id="3,3" onclick="flip(this)"></div>
-            <div class="circle" id="3,4" onclick="flip(this)"></div>
-        </div>
-        <div class="row">
-            <div class="circle" id="4,1" onclick="flip(this)"></div>
-            <div class="circle" id="4,2" onclick="flip(this)"></div>
-            <div class="circle" id="4,3" onclick="flip(this)"></div>
-            <div class="circle" id="4,4" onclick="flip(this)"></div>
-        </div>
+    <div class="home_button">
+        <a href="../choose_avatar.html"><ion-icon name="home-outline" class="homebtn"></ion-icon></ion-icon></a>
     </div>
-    <div id="result"></div>
+    <div>
+        <div id="turn">Player 1 Turn!</div>
+        <div class="board">
+            <div class="row">
+                <div class="circle" id="1,1" onclick="flip(this)"></div>
+                <div class="circle" id="1,2" onclick="flip(this)"></div>
+                <div class="circle" id="1,3" onclick="flip(this)"></div>
+                <div class="circle" id="1,4" onclick="flip(this)"></div>
+            </div>
+            <div class="row">
+                <div class="circle" id="2,1" onclick="flip(this)"></div>
+                <div class="circle" id="2,2" onclick="flip(this)"></div>
+                <div class="circle" id="2,3" onclick="flip(this)"></div>
+                <div class="circle" id="2,4" onclick="flip(this)"></div>
+            </div>
+            <div class="row">
+                <div class="circle" id="3,1" onclick="flip(this)"></div>
+                <div class="circle" id="3,2" onclick="flip(this)"></div>
+                <div class="circle" id="3,3" onclick="flip(this)"></div>
+                <div class="circle" id="3,4" onclick="flip(this)"></div>
+            </div>
+            <div class="row">
+                <div class="circle" id="4,1" onclick="flip(this)"></div>
+                <div class="circle" id="4,2" onclick="flip(this)"></div>
+                <div class="circle" id="4,3" onclick="flip(this)"></div>
+                <div class="circle" id="4,4" onclick="flip(this)"></div>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="footer">
+        <p class="footer_p">Copyright&#169;relaxbot</p>
+    </div>
     <script src="4 In A Row(1).js"></script>
 </body>
 </html>
