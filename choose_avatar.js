@@ -19,7 +19,7 @@ skip_click.addEventListener("click", () => {
     document.getElementById("display_3").style.display = "block";
 });
 // sent message
-let bot_message = ["Hello!", "I'm fine... How about you", "Exciting things!", "Glad to hear it", "I don't understand"];
+let bot_message = ["Hello!", "I'm fine... How about you?", "Exciting things!", "Glad to hear it","How can I help you!","Ahh... I have special things for you!","Do you like to play music or game!", "I don't understand"];
 var sent_click = document.getElementById("sent_icon");
 sent_click.addEventListener("click", () => {
     document.getElementById("chatbox").innerHTML += "<div class='user' style='display:flex;'>" + document.getElementById("message").value + "</div>";
@@ -33,8 +33,16 @@ sent_click.addEventListener("click", () => {
         document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[2] + "</div>";
     } else if (user_message.includes("happy")) {
         document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[3] + "</div>";
-    } else {
+    }else if(user_message.includes("boring") || user_message.includes("lonely")){
         document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[4] + "</div>";
+    }else if(user_message.includes("know")){
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[5] + "</div>";
+    }else if(user_message.includes("tell")){
+        document.getElementById("chatbox").innerHTML += "<div class='bot' style='display:flex;'>" + bot_message[6] + "</div>";
     }
 });
+
+function play_music(){
+    
+}
 
