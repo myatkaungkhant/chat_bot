@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relax Bot</title>
     <link rel="stylesheet" href="choose_avatar.css">
+    <link rel="stylesheet" href="./audio visualizer/audiovz.css">
     <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -38,7 +39,7 @@
     <div class="display_2" id="display_2">
         <div class="bot_pic">
             <img src="" alt="" class="choose_bot" id="choose_bot">
-            <div class="intro_p"><p id="intro"></p><button class="btn_next skip" id="btn_skip">Go</button></div>
+            <div class="intro_p"><p id="intro"></p><button class="btn_next skip" id="btn_skip">Ok</button></div>
         </div>
         <div class="footer">
             <p class="footer_p">Copyright&#169;relaxbot</p>
@@ -55,9 +56,15 @@
             <ion-icon name="mic" class="icon"></ion-icon>
             <ion-icon name="paper-plane" class="icon" id="sent_icon"></ion-icon>
         </div>
+        <div id="content">
+            <input type="file" id="thefile" accept="audio/*">
+            <canvas id="canvas"></canvas>
+            <audio id="audio" controls></audio>
+        </div>
         <div class="footer">
             <p class="footer_p">Copyright&#169;relaxbot</p>
         </div>
     </div>
+    <script src="./audio visualizer/audiovz.js"></script>
 </body>
 </html>
