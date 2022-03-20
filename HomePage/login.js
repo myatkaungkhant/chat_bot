@@ -8,7 +8,7 @@ lgprofile.addEventListener("click" , ()=>{
     document.getElementById("loginbox").style.display="block";
 })
 
-function login(){
+// function login(){
     
     if(document.getElementById("pw").value == paw){
         window.location.href = "../choose_avatar.html";
@@ -19,5 +19,5 @@ function login(){
         window.alert("Inncorrect Password");
     }
     
-}
+// }
 

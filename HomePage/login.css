@@ -109,6 +109,9 @@ button:hover{
     transition: all 1s;
     
 }
+a{
+    text-decoration: none;
+}
 
 .loginprofile:hover{
     opacity: 1;
