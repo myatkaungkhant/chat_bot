@@ -1,25 +1,25 @@
 #thefile{
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 130px;
+    right: 155px;
     z-index: 100;
 }
 #canvas{
     position: fixed;
-    left: 10px;
-    top: 0;
-    width: 50vw;
-    height: 50vh;
+    right: 5px;
+    top: 125px;
+    width: 30vw;
+    height: 30vh;
     border: 1px solid black;
 }
 audio{
     position: fixed;
-    left: 10px;
-    bottom: 250px;
-    width: 50vw;
+    right: 5px;
+    bottom: 255px;
+    width: 30vw;
     background-color: gray;
 }
 #content{
     background-color: #000;
-    display: none;
+    display: block;
 }

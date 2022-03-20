@@ -123,5 +123,12 @@ function stop_music(){
     audio.currentTime=0;
 }
 
+var change = document.getElementById("change");
+change.addEventListener("click",() => {
+            document.getElementById("bgchange").style.backgroundImage = "url('./image/wallpaper2.jpg')";
+            document.getElementById("bgchange").style.backgroundSize = "cover";
+            document.getElementById("bgchange").style.backgroundRepeat = "no-repeat";
+            document.getElementById("bgchange").style.backgroundPosition = "center";
+});
 
 

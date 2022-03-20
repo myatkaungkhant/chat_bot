@@ -11,12 +11,12 @@ lgprofile.addEventListener("click" , ()=>{
 function login(){
     
     if(document.getElementById("pw").value == paw){
-        document.getElementById("login-button").innerHTML = '<a href="../choose_avatar.html"> </a>';
+        window.location.href="../choose_avatar.html";
+        // document.getElementById("login-button").innerHTML = '<a href="../choose_avatar.html"> </a>';
         // document.getElementById("next").click();
-        window.alert("correct");
     }
     else{
-        window.alert("Password Incorrect");
+        window.alert("Inncorrect Password");
     }
     
 }

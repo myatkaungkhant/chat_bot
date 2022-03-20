@@ -215,7 +215,7 @@ body {
     display: none;
 }
 .chatbox {
-    width: 50vw;
+    width: 49vw;
     height: 70vh;
     border: 2px solid yellow;
     box-shadow: 1px 1px 25px red;
@@ -255,7 +255,7 @@ body {
 }
 
 .message_box {
-    width: 50vw;
+    width: 49vw;
     height: 10vh;
     border: 2px solid yellow;
     box-shadow: 1px 1px 25px orangered;
@@ -265,7 +265,7 @@ body {
 }
 
 .message {
-    width: 40vw;
+    width: 41vw;
     height: 2vh;
     padding: 2vh;
     border-radius: 12px;
@@ -277,8 +277,8 @@ body {
 .icon {
     width: 40px;
     height: 32px;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 12px;
+    margin-left: 15px;
     color: white;
 }
 

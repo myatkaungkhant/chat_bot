@@ -12,7 +12,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="choose_avatar.js" defer></script>
 </head>
-<body>
+<body id="bgchange">
     <!-- display_1 -->
     <div class="display_1" id="display_1">
         <div class="title">
@@ -53,8 +53,7 @@
         </div>
         <div class="message_box">
             <input type="text" class="message" id="message" placeholder="Enter Message">
-            <ion-icon name="mic" class="icon"></ion-icon>
-            <ion-icon name="paper-plane" class="icon" id="sent_icon"></ion-icon>
+            <ion-icon name="arrow-redo" class="icon" id="sent_icon"></ion-icon>
         </div>
         <div id="content">
             <input type="file" id="thefile" accept="audio/*">
@@ -62,7 +61,7 @@
             <audio id="audio"  autoplay controls></audio>
         </div>
         <div>
-            <a href="./4 in a row/4 In A Row(1).html"><ion-icon name="game-controller-outline" class="gamebtn"></ion-icon></a>
+            <ion-icon name="sync-outline" class="gamebtn" id="change"></ion-icon>
         </div>
         <div class="footer">
             <p class="footer_p">Copyright&#169;relaxbot</p>
