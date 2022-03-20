@@ -10,14 +10,14 @@ lgprofile.addEventListener("click" , ()=>{
 
 // function login(){
     
-    if(document.getElementById("pw").value == paw){
-        window.location.href = "../choose_avatar.html";
-        // document.getElementById("login-button").innerHTML = '<a href="../choose_avatar.html"> </a>';
-        // document.getElementById("next").click();
-    }
-    else{
-        window.alert("Inncorrect Password");
-    }
+    // if(document.getElementById("pw").value == paw){
+    //     window.location.href = "../choose_avatar.html";
+    //     // document.getElementById("login-button").innerHTML = '<a href="../choose_avatar.html"> </a>';
+    //     // document.getElementById("next").click();
+    // }
+    // else{
+    //     window.alert("Inncorrect Password");
+    // }
     
 // }
 
